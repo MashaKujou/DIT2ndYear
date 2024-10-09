@@ -1,0 +1,4 @@
+1728048174718,1183,7000.0,true,Kyoshiro,TestPass,Kyo,Shiro
+1728286258992,777,0.0,true,Masha,Kujou,Mj,Villacantos
+1728306508413,3220,0.0,false,Alisa,Nya,Masha,Mikhailovna
+1728454251734,2384,0.0,true,MashaKujou09,Mashaaa,Marc,VIllacantos
