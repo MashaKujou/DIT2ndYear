@@ -1,5 +1,7 @@
 # DIT2ndYear
 
+# PLEASE FIX THIS CODE (it's basically done you only need to put some codes)
+
 Hello I am Marc an Student of DIT 2nd Year in College of Saint Amatiel  
 
 FINAL PROJECT FOR DIT
