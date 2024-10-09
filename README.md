@@ -16,14 +16,15 @@ Used as Temporary storage of data
 Object into class 
 
 Project: 
-1 can create account
 
-2 generate account number and pin (pin should not be duplicated into others, should show info of the user) property is  active 
+- can create account
 
-3. Amount detail can withdraw deposit and show balance 
+-  generate account number and pin (pin should not be duplicated into others, should show info of the user) property is  active 
 
-4. person and bank account is different
+-  Amount detail can withdraw deposit and show balance 
+
+-  person and bank account is different
    
-5. Programs should create , deactivate and show amount, balance and withdraw
+-  Programs should create , deactivate and show amount, balance and withdraw
 
 
