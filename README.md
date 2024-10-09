@@ -1,6 +1,8 @@
 # DIT2ndYear
 
-# PLEASE FIX THIS CODE (it's basically done you only need to put some codes)
+# PLEASE DEBUG THIS CODE
+# (it's basically done you only need to put some codes)
+# You can message the group chat for questions
 
 Hello I am Marc an Student of DIT 2nd Year in College of Saint Amatiel  
 
