@@ -10,10 +10,10 @@ FINAL PROJECT FOR DIT
 
 what we need to do is
 
-Text file 
-Read text file
-Used as Temporary storage of data
-Object into class 
+1. Text file 
+2. Read text file
+3. Used as Temporary storage of data
+4. Object into class 
 
 Project: 
 
