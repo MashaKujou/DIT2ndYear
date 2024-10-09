@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 
 public class Main {
     static AccountManager manager = new AccountManager();
@@ -35,6 +35,7 @@ public class Main {
                         + newAccount.getLName());
                 }
                 case 2 -> {
+                    sessionActive = true;
                     System.out.print("\nEnter Username: ");
                     String loginUsername = scanner.nextLine();
                     System.out.print("Enter Password: ");
@@ -64,8 +65,10 @@ public class Main {
     }
 
     public static void actionChoice() {
-        while (sessionActive) {
-            System.out.println("Login successful!");
+        boolean actionSession = true;
+        System.out.println("Login successful!");
+
+        while (actionSession) {
             System.out.println("\nChoose an option:");
             System.out.print("1. Deposit\n2. Withdraw\n3. Check Info\n4. Logout\n5. Disable Account\nSelect option: ");
             int actionChoice = scanner.nextInt();
@@ -81,9 +84,8 @@ public class Main {
                         System.out.println("Deposited: $" + depositAmount + ". New balance: $" + account.getBalance());
                     } else if (depositAmount > 10000) {
                         System.out.println("Error: Cannot deposit more than $10,000.");
-                    }
-                    else {
-                        System.out.println("Please input a valid number");
+                    } else {
+                        System.out.println("Please input a valid number.");
                     }
                 }
                 case 2 -> {
@@ -98,26 +100,27 @@ public class Main {
                         System.out.println("Insufficient balance for withdrawal.");
                     }
                 }
-                case 3 ->  {
+                case 3 -> {
                     // Check Info
                     System.out.println("\nAccount Info");
-                    System.out.println("First Name:" + account.getFName());
-                    System.out.println("Last Name: + account.getLname()");
-                    System.out.println("\nCard Number: " + account.getAccountNumber());
+                    System.out.println("First Name: " + account.getFName());
+                    System.out.println("Last Name: " + account.getLName());
+                    System.out.println("Card Number: " + account.getAccountNumber());
                     System.out.println("Your current balance is: $" + account.getBalance());
                 }
                 case 4 -> {
                     // Logout
-                    sessionActive = false;
                     System.out.println("Logging out and saving account balance...");
                     manager.saveAccounts();
                     System.out.println("Logged out successfully.");
+                    actionSession = false;
                 }
                 case 5 -> {
+                    // Deactivate Account
                     account.deactivate();
                     manager.saveAccounts();
-                    System.out.println("This account " +  "'" + account.getUsername()+ "'" + "  Deactivated");
-                    break;
+                    System.out.println("This account '" + account.getUsername() + "' has been deactivated.");
+                    actionSession = false;
                 }
                 default -> System.out.println("Invalid option. Please try again.");
             }
