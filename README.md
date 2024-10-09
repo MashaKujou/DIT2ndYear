@@ -4,7 +4,7 @@
 # (it's basically done you only need to put some codes)
 # You can message the group chat for questions
 
-Hello I am Marc an Student of DIT 2nd Year in College of Saint Amatiel  
+Hello I am Marc a Student of DIT 2nd Year in College of Saint Amatiel  
 
 FINAL PROJECT FOR DIT
 
