@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("\nWelcome to the Banking System");
 
-        while (sessionActive) {
+        while (true) {
             System.out.println("\n-------------------------------------------------------");
             System.out.print("1. Create Account\n2. Login\n3. Exit");
             System.out.println("\n------------------------------------------------------- \nSelect Option:");
@@ -64,7 +64,7 @@ public class Main {
         }
     }
 
-   public static void actionChoice() {
+    public static void actionChoice() {
         while (sessionActive) {
             System.out.println("Login successful!");
             System.out.println("\nChoose an option:");
